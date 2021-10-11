@@ -62,11 +62,11 @@ def main():
 	py_outputs_10k = []
 	# NOTE: Per the assignment, list_count is set to 100.  However I have been experiencing extremely slow code, so changing this to a lower number is helpful.
 	list_count = 100
-	for i in xrange(list_count):
+	for i in range(list_count):
 		# Using random samples, since previous method was leading to extreme slowdown
-		input_list_500 = random.sample(xrange(500),500)
-		input_list_1k = random.sample(xrange(1000),1000)
-		input_list_10k = random.sample(xrange(10000),10000)
+		input_list_500 = random.sample(range(500),500)
+		input_list_1k = random.sample(range(1000),1000)
+		input_list_10k = random.sample(range(10000),10000)
 		
 		# for y in xrange(500):
 			# input_list_500.append(random.random() * 1000)
@@ -105,16 +105,16 @@ def main():
 
 	# Printing Outputs
 
-	print "Insertion Sort took %10.7f seconds, on average, to run over a list of length 500" % is_average_500
-	print "Insertion Sort took %10.7f seconds, on average, to run over a list of length 1000" % is_average_1k
-	print "Insertion Sort took %10.7f seconds, on average, to run over a list of length 10000" % is_average_10k
-	print "\n"
-	print "Shell Sort took %10.7f seconds, on average, to run over a list of length 500" % shell_average_500
-	print "Shell Sort took %10.7f seconds, on average, to run over a list of length 1000" % shell_average_1k
-	print "Shell Sort took %10.7f seconds, on average, to run over a list of length 10000" % shell_average_10k
-	print "\n"
-	print "Python Sort took %10.7f seconds, on average, to run over a list of length 500" % py_average_500
-	print "Python Sort took %10.7f seconds, on average, to run over a list of length 1000" % py_average_1k
-	print "Python Sort took %10.7f seconds, on average, to run over a list of length 10000" % py_average_10k
+	print ("Insertion Sort took %10.7f seconds, on average, to run over a list of length 500" % is_average_500)
+	print ("Insertion Sort took %10.7f seconds, on average, to run over a list of length 1000" % is_average_1k)
+	print ("Insertion Sort took %10.7f seconds, on average, to run over a list of length 10000" % is_average_10k)
+	print ("\n")
+	print ("Shell Sort took %10.7f seconds, on average, to run over a list of length 500" % shell_average_500)
+	print ("Shell Sort took %10.7f seconds, on average, to run over a list of length 1000" % shell_average_1k)
+	print ("Shell Sort took %10.7f seconds, on average, to run over a list of length 10000" % shell_average_10k)
+	print ("\n")
+	print ("Python Sort took %10.7f seconds, on average, to run over a list of length 500" % py_average_500)
+	print ("Python Sort took %10.7f seconds, on average, to run over a list of length 1000" % py_average_1k)
+	print ("Python Sort took %10.7f seconds, on average, to run over a list of length 10000" % py_average_10k)
 
 main()

@@ -92,12 +92,12 @@ def main():
 	bsr_outputs_1k = []
 	bsr_outputs_10k = []
 				
-	for i in xrange(100):
-		for y in xrange(500):
+	for i in range(100):
+		for y in range(500):
 			input_list_500.append(random.random() * 1000)
-		for q in xrange(1000):
+		for q in range(1000):
 			input_list_1k.append(random.random() * 5000)
-		for p in xrange (10000):
+		for p in range (10000):
 			input_list_10k.append(random.random() * 100000)
 		## Sequential Search Outputs
 		sq_outputs_500.append(sequential_search(input_list_500,-1)[1])
@@ -139,20 +139,20 @@ def main():
 
 	# Printing Outputs
 
-	print "Sequential Search took %10.7f seconds, on average, to run over a list of length 500" % sq_average_500
-	print "Sequential Search took %10.7f seconds, on average, to run over a list of length 1000" % sq_average_1k
-	print "Sequential Search took %10.7f seconds, on average, to run over a list of length 10000" % sq_average_10k
-	print "\n"
-	print "Ordered Sequential Search took %10.7f seconds, on average, to run over a list of length 500" % osq_average_500
-	print "Ordered Sequential Search took %10.7f seconds, on average, to run over a list of length 1000" % osq_average_1k
-	print "Ordered Sequential Search took %10.7f seconds, on average, to run over a list of length 10000" % osq_average_10k
-	print "\n"
-	print "Binary Search Iterative took %10.7f seconds, on average, to run over a list of length 500" % bsi_average_500
-	print "Binary Search Iterative took %10.7f seconds, on average, to run over a list of length 1000" % bsi_average_1k
-	print "Binary Search Iterative took %10.7f seconds, on average, to run over a list of length 10000" % bsi_average_10k
-	print "\n"
-	print "Binary Search Recursive took %10.7f seconds, on average, to run over a list of length 500" % bsr_average_500
-	print "Binary Search Recursive took %10.7f seconds, on average, to run over a list of length 1000" % bsr_average_1k
-	print "Binary Search Recursive took %10.7f seconds, on average, to run over a list of length 10000" % bsr_average_10k
+	print ("Sequential Search took %10.7f seconds, on average, to run over a list of length 500" % sq_average_500)
+	print ("Sequential Search took %10.7f seconds, on average, to run over a list of length 1000" % sq_average_1k)
+	print ("Sequential Search took %10.7f seconds, on average, to run over a list of length 10000" % sq_average_10k)
+	print ("\n")
+	print ("Ordered Sequential Search took %10.7f seconds, on average, to run over a list of length 500" % osq_average_500)
+	print ("Ordered Sequential Search took %10.7f seconds, on average, to run over a list of length 1000" % osq_average_1k)
+	print ("Ordered Sequential Search took %10.7f seconds, on average, to run over a list of length 10000" % osq_average_10k)
+	print ("\n")
+	print ("Binary Search Iterative took %10.7f seconds, on average, to run over a list of length 500" % bsi_average_500)
+	print ("Binary Search Iterative took %10.7f seconds, on average, to run over a list of length 1000" % bsi_average_1k)
+	print ("Binary Search Iterative took %10.7f seconds, on average, to run over a list of length 10000" % bsi_average_10k)
+	print ("\n")
+	print ("Binary Search Recursive took %10.7f seconds, on average, to run over a list of length 500" % bsr_average_500)
+	print ("Binary Search Recursive took %10.7f seconds, on average, to run over a list of length 1000" % bsr_average_1k)
+	print ("Binary Search Recursive took %10.7f seconds, on average, to run over a list of length 10000" % bsr_average_10k)
 
 main()
