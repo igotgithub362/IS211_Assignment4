@@ -105,16 +105,16 @@ def main():
 
 	# Printing Outputs
 
-	print ("Insertion Sort took %10.7f seconds, on average, to run over a list of length 500" % is_average_500)
-	print ("Insertion Sort took %10.7f seconds, on average, to run over a list of length 1000" % is_average_1k)
-	print ("Insertion Sort took %10.7f seconds, on average, to run over a list of length 10000" % is_average_10k)
+	print ("Insertion Sort took %10.7f seconds, to run over a list of length 500" % is_average_500)
+	print ("Insertion Sort took %10.7f seconds, to run over a list of length 1000" % is_average_1k)
+	print ("Insertion Sort took %10.7f seconds, to run over a list of length 10000" % is_average_10k)
 	print ("\n")
-	print ("Shell Sort took %10.7f seconds, on average, to run over a list of length 500" % shell_average_500)
-	print ("Shell Sort took %10.7f seconds, on average, to run over a list of length 1000" % shell_average_1k)
-	print ("Shell Sort took %10.7f seconds, on average, to run over a list of length 10000" % shell_average_10k)
+	print ("Shell Sort took %10.7f seconds, to run over a list of length 500" % shell_average_500)
+	print ("Shell Sort took %10.7f seconds, to run over a list of length 1000" % shell_average_1k)
+	print ("Shell Sort took %10.7f seconds, to run over a list of length 10000" % shell_average_10k)
 	print ("\n")
-	print ("Python Sort took %10.7f seconds, on average, to run over a list of length 500" % py_average_500)
-	print ("Python Sort took %10.7f seconds, on average, to run over a list of length 1000" % py_average_1k)
-	print ("Python Sort took %10.7f seconds, on average, to run over a list of length 10000" % py_average_10k)
+	print ("Python Sort took %10.7f seconds, to run over a list of length 500" % py_average_500)
+	print ("Python Sort took %10.7f seconds, to run over a list of length 1000" % py_average_1k)
+	print ("Python Sort took %10.7f seconds, to run over a list of length 10000" % py_average_10k)
 
 main()
